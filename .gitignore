@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+host/logs/*.log
+host/logs/*.jsonl
+.DS_Store
+Thumbs.db
+ssh_info.txt
+*.zip

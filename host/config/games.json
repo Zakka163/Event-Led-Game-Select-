@@ -1,0 +1,126 @@
+{
+  "default_profile": "default",
+  "profiles": {
+    "default": {
+      "description": "Profil default untuk game yang belum terdaftar (A & B menyala)",
+      "leds": {
+        "LED1": true,
+        "LED2": true,
+        "LED3": false,
+        "LED4": false
+      }
+    },
+    "all_on": {
+      "description": "Semua 6 tombol aksi menyala (A, B, X, Y, L, R)",
+      "leds": {
+        "LED1": true,
+        "LED2": true,
+        "LED3": true,
+        "LED4": true,
+        "LED5": true,
+        "LED6": true
+      }
+    },
+    "five_btn": {
+      "description": "5 tombol menyala (A, B, X, Y, L)",
+      "leds": {
+        "LED1": true,
+        "LED2": true,
+        "LED3": true,
+        "LED4": true,
+        "LED5": true
+      }
+    },
+    "four_btn": {
+      "description": "4 tombol menyala (A, B, X, Y)",
+      "leds": {
+        "LED1": true,
+        "LED2": true,
+        "LED3": true,
+        "LED4": true
+      }
+    },
+    "three_btn": {
+      "description": "3 tombol menyala (A, B, X)",
+      "leds": {
+        "LED1": true,
+        "LED2": true,
+        "LED3": true,
+        "LED4": false
+      }
+    },
+    "two_btn": {
+      "description": "2 tombol menyala (A, B)",
+      "leds": {
+        "LED1": true,
+        "LED2": true,
+        "LED3": false,
+        "LED4": false
+      }
+    },
+    "one_btn": {
+      "description": "1 tombol menyala (A)",
+      "leds": {
+        "LED1": true,
+        "LED2": false,
+        "LED3": false,
+        "LED4": false
+      }
+    },
+    "all_off": {
+      "description": "Semua LED mati",
+      "leds": {
+        "LED1": false,
+        "LED2": false,
+        "LED3": false,
+        "LED4": false
+      }
+    }
+  },
+  "systems": {
+    "neogeo": "four_btn",
+    "nes": "two_btn"
+  },
+  "games": {
+    "mame/sf2.zip": {
+      "name": "Street Fighter II",
+      "aliases": [
+        "Street Fighter II: The World Warrior",
+        "Street Fighter II' - Champion Edition"
+      ],
+      "profile": "all_on"
+    },
+    "mame/mslug.zip": {
+      "name": "Metal Slug",
+      "aliases": [
+        "Metal Slug - Super Vehicle-001"
+      ],
+      "profile": "three_btn"
+    },
+    "neogeo/kof98.zip": {
+      "name": "The King of Fighters '98",
+      "aliases": [
+        "The King of Fighters '98 - The Slugfest"
+      ],
+      "profile": "four_btn"
+    },
+    "fbneo/ddp.zip": {
+      "name": "DoDonPachi",
+      "profile": "two_btn"
+    },
+    "nes/smb.zip": {
+      "name": "Super Mario Bros.",
+      "profile": "two_btn"
+    },
+    "mame/galaga.zip": {
+      "name": "Galaga",
+      "profile": "one_btn",
+      "leds": {
+        "LED1": true,
+        "LED2": false,
+        "LED3": false,
+        "LED4": false
+      }
+    }
+  }
+}

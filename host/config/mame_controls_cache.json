@@ -1,0 +1,69 @@
+{
+  "arkanoid": {
+    "buttons": 1,
+    "control": "dial",
+    "players": 2,
+    "source": "mame_xml"
+  },
+  "cybots": {
+    "buttons": 4,
+    "control": "joy(8w)",
+    "players": 2,
+    "source": "mame_xml"
+  },
+  "daytona": {
+    "buttons": 9,
+    "control": "paddle",
+    "players": 1,
+    "source": "mame_xml"
+  },
+  "galaga": {
+    "buttons": 1,
+    "control": "joy(2w)",
+    "players": 2,
+    "source": "mame_xml"
+  },
+  "gt3d": {
+    "buttons": 2,
+    "control": "trackball",
+    "players": 2,
+    "source": "mame_xml"
+  },
+  "mslug": {
+    "buttons": 3,
+    "control": "joy(8w)",
+    "players": 2,
+    "source": "mame_xml+override"
+  },
+  "pacman": {
+    "buttons": 0,
+    "control": "joy(4w)",
+    "players": 2,
+    "source": "mame_xml"
+  },
+  "sf2": {
+    "buttons": 6,
+    "control": "joy(8w)",
+    "players": 2,
+    "source": "mame_xml"
+  },
+  "sf2ce": {
+    "buttons": 6,
+    "control": "joy(8w)",
+    "players": 2,
+    "source": "mame_xml"
+  },
+  "timecris": {
+    "buttons": 2,
+    "control": "lightgun",
+    "players": 1,
+    "source": "mame_xml"
+  },
+  "trackfld": {
+    "buttons": 3,
+    "control": "only_buttons",
+    "players": 4,
+    "source": "mame_xml"
+  }
+}
+

@@ -1,0 +1,32 @@
+{
+  "platform": "auto",
+  "transport": "serial",
+  "send_to_transport": true,
+  "hardware": {
+    "buttons": 6
+  },
+  "serial": {
+    "port": "auto",
+    "baud_rate": 115200,
+    "device_id": "ARCADELED_V1",
+    "startup_delay_seconds": 0.2,
+    "timeout_seconds": 2.0,
+    "write_timeout_seconds": 2.0,
+    "reconnect_attempts": 3,
+    "reconnect_delay_seconds": 0.5
+  },
+  "daemon": {
+    "host": "127.0.0.1",
+    "port": 19876,
+    "debounce_ms": 30
+  },
+  "logging": {
+    "log_file": "host/logs/events.log",
+    "jsonl_file": "host/logs/events.jsonl",
+    "console": true,
+    "level": "INFO"
+  },
+  "paths": {
+    "games_config": "host/config/games.json"
+  }
+}
