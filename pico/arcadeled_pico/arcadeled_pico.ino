@@ -1,15 +1,17 @@
 #include <Joystick.h>
 
 // ============================================================
-// Konfigurasi 1 Pico: 7 Tombol Input (6 Aksi + 1 Start) & 6 LED
-//   - Tombol 1..6 (A, B, X, Y, L, R) : GP2, GP3, GP4, GP5, GP10, GP11
-//   - Tombol 7    (Start)            : GP12
-//   - 6 LED       (A, B, X, Y, L, R) : GP6, GP7, GP8, GP9, GP16, GP17
+// Konfigurasi 1 Pico: 12 Tombol Input (6 Aksi + Start + Select + 4 Arah) & 6 LED
+//   - Tombol 1..6  (A, B, X, Y, L, R) : GP2, GP3, GP4, GP5, GP10, GP11
+//   - Tombol 7     (Start)            : GP12
+//   - Tombol 8     (Select)           : GP13
+//   - Tombol 9..12 (Atas, Bawah, Kiri, Kanan) : GP14, GP15, GP18, GP19
+//   - 6 LED        (A, B, X, Y, L, R) : GP6, GP7, GP8, GP9, GP16, GP17
 // ============================================================
-#define NUM_BUTTONS 7
+#define NUM_BUTTONS 12
 #define NUM_LEDS 6
 
-const byte btn[NUM_BUTTONS] = {2, 3, 4, 5, 10, 11, 12};
+const byte btn[NUM_BUTTONS] = {2, 3, 4, 5, 10, 11, 12, 13, 14, 15, 18, 19};
 const byte led[NUM_LEDS] = {6, 7, 8, 9, 16, 17};
 
 // Button debounce

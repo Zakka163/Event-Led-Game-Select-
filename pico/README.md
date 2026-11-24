@@ -19,14 +19,16 @@ Direktori ini berisi firmware Arduino-Pico yang **sudah diuji langsung pada pera
 
 ---
 
-## 2. Pemetaan Pin GPIO (7 Tombol Input & 6 LED)
+## 2. Pemetaan Pin GPIO (12 Tombol Input & 6 LED)
 
-Firmware [arcadeled_pico.ino](arcadeled_pico/arcadeled_pico.ino) dikonfigurasi untuk **7 tombol input** (`6` tombol aksi + `1` tombol Start) dan **6 output LED** (`LED1`–`LED6` untuk `A, B, X, Y, L, R`):
+Firmware [arcadeled_pico.ino](arcadeled_pico/arcadeled_pico.ino) dikonfigurasi untuk **12 tombol input** (`6` tombol aksi + `Start` + `Select` + `4` arah) dan **6 output LED** (`LED1`–`LED6` untuk `A, B, X, Y, L, R`):
 
 | Fungsi | Channel / HID | Pin GPIO Pico | Keterangan |
 | --- | --- | --- | --- |
 | **A, B, X, Y, L, R** | `Joystick.button(1..6)` | `GP2, GP3, GP4, GP5, GP10, GP11` | `INPUT_PULLUP` (debounce 25 ms) |
 | **Start** | `Joystick.button(7)` | `GP12` | `INPUT_PULLUP` (debounce 25 ms, tanpa LED) |
+| **Select** | `Joystick.button(8)` | `GP13` | `INPUT_PULLUP` (debounce 25 ms, tanpa LED) |
+| **Arah (Atas, Bawah, Kiri, Kanan)** | `Joystick.button(9..12)` | `GP14, GP15, GP18, GP19` | `INPUT_PULLUP` (debounce 25 ms, tanpa LED) |
 | **LED A, B, X, Y, L, R** | `LED1`–`LED6` | `GP6, GP7, GP8, GP9, GP16, GP17` | `OUTPUT` (aktif `HIGH`) |
 
 ---
