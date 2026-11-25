@@ -1,8 +1,4 @@
-"""Central event processing pipeline for ArcadeLED.
-
-Connects event normalization, real-time Phase 1 logging, game resolution,
-LED profile resolution, command deduplication, and hardware/mock transport.
-"""
+"""Event processing pipeline."""
 
 from __future__ import annotations
 

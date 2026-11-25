@@ -1,8 +1,4 @@
-"""Real-time event logger for Phase 1 observation and diagnostics.
-
-Writes both the human-readable Phase 1 block log format and optional
-newline-delimited JSON (JSONL) records for machine inspection.
-"""
+"""Event logger (text log and JSONL)."""
 
 from __future__ import annotations
 

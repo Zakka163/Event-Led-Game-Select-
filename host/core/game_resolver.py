@@ -1,9 +1,4 @@
-"""Game identification and matching engine for ArcadeLED.
-
-`GameResolver` maps a normalized `GameEvent` to a configured game entry or
-fallback profile name without embedding any LED hardware or profile-merging
-logic (which lives in `ProfileManager`).
-"""
+"""Game matching against games.json."""
 
 from __future__ import annotations
 

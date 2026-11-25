@@ -1,13 +1,6 @@
 #include <Joystick.h>
 
-// ============================================================
-// Konfigurasi 1 Pico: 12 Tombol Input (6 Aksi + Start + Select + 4 Arah) & 6 LED
-//   - Tombol 1..6  (A, B, X, Y, L, R) : GP2, GP3, GP4, GP5, GP10, GP11
-//   - Tombol 7     (Start)            : GP12
-//   - Tombol 8     (Select)           : GP13
-//   - Tombol 9..12 (Atas, Bawah, Kiri, Kanan) : GP14, GP15, GP18, GP19
-//   - 6 LED        (A, B, X, Y, L, R) : GP6, GP7, GP8, GP9, GP16, GP17
-// ============================================================
+// 12 tombol input (A, B, X, Y, L, R, Start, Select, Atas, Bawah, Kiri, Kanan) + 6 LED (A..R)
 #define NUM_BUTTONS 12
 #define NUM_LEDS 6
 

@@ -1,17 +1,5 @@
 #!/bin/bash
-# ArcadeLED Batocera Event Adapter (game-selected)
-#
-# Expected installation path on Batocera (v33+):
-#   /userdata/system/configs/emulationstation/scripts/game-selected/arcadeled_game_selected.sh
-#
-# EmulationStation parameters (per Batocera Wiki launch_a_script):
-#   $1 = system shortname (e.g., mame, neogeo, snes)
-#   $2 = full ROM path    (e.g., /userdata/roms/mame/sf2.zip)
-#   $3 = game display name (e.g., Street Fighter II)
-#
-# Design rule:
-#   This adapter contains NO game resolution or LED logic.
-#   It forwards raw parameters asynchronously so EmulationStation UI never blocks.
+# EmulationStation game-selected hook: $1=system, $2=rom_path, $3=game_name
 
 ARCADELED_HOME="${ARCADELED_HOME:-/userdata/system/arcadeled}"
 ARCADELED_MAIN="${ARCADELED_HOME}/host/main.py"

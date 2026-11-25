@@ -1,16 +1,4 @@
-"""USB CDC Serial transport for Raspberry Pi Pico running ARCADELED_V1 firmware.
-
-Protocol (verified against pico/arcadeled_pico/arcadeled_pico.ino at 115200 8N1):
-  - Handshake : `HELLO\\n`      -> `ARCADELED_V1`
-  - All LEDs  : `ALL ON\\n`     -> `OK`
-                `ALL OFF\\n`    -> `OK`
-  - Single LED: `LED<1-4> ON\\n`  -> `OK`
-                `LED<1-4> OFF\\n` -> `OK`
-  - Error     : anything else  -> `ERROR`
-
-`pyserial` is imported lazily so hardware-free simulation and unit tests run
-using only the Python 3 standard library.
-"""
+"""USB CDC Serial transport for Raspberry Pi Pico."""
 
 from __future__ import annotations
 

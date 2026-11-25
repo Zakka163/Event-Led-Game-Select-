@@ -1,8 +1,4 @@
-"""Standardized event model, validation, and normalization for ArcadeLED.
-
-All platform adapters (Batocera, EmuELEC, Mock/CLI) must emit events normalized
-into `GameEvent` so the core engine remains platform-agnostic.
-"""
+"""Event model, validation, and normalization."""
 
 from __future__ import annotations
 

@@ -1,10 +1,5 @@
 #!/bin/bash
-# Non-destructive installer for ArcadeLED on Batocera (Phase 1).
-#
-# Safety guarantees:
-#   - Never modifies read-only Batocera OS system files.
-#   - Never overwrites user custom.sh or existing user configs without backup.
-#   - Supports --dry-run and --uninstall.
+# Batocera installer for ArcadeLED.
 
 set -euo pipefail
 

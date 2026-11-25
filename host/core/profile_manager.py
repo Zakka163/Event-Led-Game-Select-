@@ -1,11 +1,4 @@
-"""LED profile loader, validator, merger, and ARCADELED_V1 command builder.
-
-Aligned to the hardware-verified 4-LED Raspberry Pi Pico firmware
-(`pico/arcadeled_pico/arcadeled_pico.ino`):
-  - Channels: `LED1`, `LED2`, `LED3`, `LED4` (GPIO 6, 7, 8, 9)
-  - Digital states: ON (`True`) / OFF (`False`)
-  - Serial lines: `ALL ON`, `ALL OFF`, `LED<1-4> ON`, `LED<1-4> OFF`
-"""
+"""LED profile loader and serial command builder."""
 
 from __future__ import annotations
 

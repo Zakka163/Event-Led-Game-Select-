@@ -1,11 +1,4 @@
-"""Lightweight game control requirements inspector for ArcadeLED logs.
-
-Determines how many buttons and what control type a game *actually* requires
-(independent of physical cabinet LED limits), using:
-1. Local cache / overrides (`host/config/mame_controls_cache.json`)
-2. Live `mame -listxml <rom_stem>` (when MAME binary is available, cached to disk)
-3. System-level defaults for non-arcade console systems
-"""
+"""Game control requirements inspector (cache, mame -listxml, system defaults)."""
 
 from __future__ import annotations
 

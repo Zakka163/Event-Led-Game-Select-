@@ -1,16 +1,4 @@
-"""In-memory mock serial transport emulating ARCADELED_V1 Pico firmware.
-
-Emulates the exact ASCII serial protocol verified in
-`pico/arcadeled_pico/arcadeled_pico.ino`:
-  - `HELLO`        -> `ARCADELED_V1`
-  - `ALL ON`       -> `OK`
-  - `ALL OFF`      -> `OK`
-  - `LED<1-4> ON`  -> `OK`
-  - `LED<1-4> OFF` -> `OK`
-  - invalid line   -> `ERROR`
-
-Includes fault injection (disconnects, timeouts, corrupted replies) for unit tests.
-"""
+"""In-memory mock serial transport."""
 
 from __future__ import annotations
 
